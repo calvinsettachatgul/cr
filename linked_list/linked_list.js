@@ -39,6 +39,7 @@ LinkedList.prototype.insert = function(position, newNode) {
   
   // some logic to return null
   if (this.size < position) {
+
     return null
   }
   
@@ -55,6 +56,33 @@ LinkedList.prototype.insert = function(position, newNode) {
     }
     currentPosition++;
     currentNode = currentNode.next
+  }
+}
+
+// node1 -> null size of 1
+
+LinkedList.prototype.deleteEnd = function(){
+  let currentNode = this.head
+  
+  if(this.size == 1){
+    this.head = null;
+    this.size = 0;
+    return;
+  }
+  
+  while(currentNode.next !== null) { 
+    
+    let nextNode = currentNode.next  // this will be null if size 1
+    let afterNextNode = nextNode.next // this will be undefined if size 1
+    
+    if(afterNextNode == null){
+
+      currentNode.next = null;
+      this.size--;
+      return;
+    }
+    
+    currentNode = currentNode.next;
   }
 }
 

@@ -52,3 +52,20 @@ console.log("expect insert to return null if position is greater than size")
 console.log(result === expected);
 
 console.log(linkedList1.allValues());
+
+// describe deleteEnd will delete the last node from the linkedlist
+linkedList1.deleteEnd();
+
+expected = [2, 4]
+console.log("expect the linkedList1 to be [2,4] deleting 3")
+// console.log(linkedList1.allValues())
+let stringResults = JSON.stringify(linkedList1.allValues())
+let expectedStringResults = JSON.stringify(expected)
+console.log(stringResults)
+console.log(expectedStringResults)
+console.log(expectedStringResults === stringResults)
+
+// should decremment the size by one
+
+console.log("expect the size to decrease by 1")
+console.log(linkedList1.size == 2)
