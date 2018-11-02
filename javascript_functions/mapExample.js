@@ -30,5 +30,17 @@ let petNames = pets.map(changeObjectToName);
 // console.log(petNames);
 
 let changePetOwner = (pet) => {
-    return pet.owner
+    return pet.owner 
 }
+
+// something like this
+let makeOwnerNull = (pet) => {
+    pet.owner = null;
+    return pet;
+}
+
+let owners = pets.map(changePetOwner)
+let petsWithNoOwner = pets.map(makeOwnerNull);
+
+console.log(owners)
+console.log(petsWithNoOwner)
