@@ -1,4 +1,5 @@
-let bubbleSort = require('../bubbleSort');
+let { bubbleSort } = require('../bubbleSort');
+let { switchArrElements } = require('../bubbleSort');
 let assert = require('assert');
 let chai = require('chai');
 let expect = chai.expect;
