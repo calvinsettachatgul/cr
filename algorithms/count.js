@@ -43,3 +43,4 @@ result = 0 + addToNum(5) => 5
 14 + addToNum(1) => 15
 */
 
+module.exports = addToNum;
