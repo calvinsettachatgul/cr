@@ -17,6 +17,9 @@
 // addToNum(1)
 
 let addToNum = (number) => {
+    if (number == 0){
+      return 0;
+    }
     // base case
     // number == 1
     if(number == 1){
