@@ -16,24 +16,17 @@
 // addToNum(2)
 // addToNum(1)
 
-let addToNum = (number, result) => {
+let addToNum = (number) => {
     // base case
     // number == 1
     if(number == 1){
-        return result;
+        return 1;
     }else{
     // iterative case
     // we know we want to call the function with number - 1
-        result = result + number
-        console.log(result)
-        addToNum(number-1, result)
+        return number + addToNum(number-1)
     }
-    
-    return result;
-    
 }
-
-console.log(addToNum(5,0));
 
 /*
 result = 0 + addToNum(5) => 5
