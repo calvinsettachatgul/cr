@@ -9,7 +9,7 @@
 // iterative case
     // you call the function again
     // also you somehow reduce the problem
-    
+
 // addToNum(5)
 // addToNum(4)
 // addToNum(3)
@@ -28,9 +28,9 @@ let addToNum = (number, result) => {
         console.log(result)
         addToNum(number-1, result)
     }
-    
+
     return result;
-    
+
 }
 
 console.log(addToNum(5,0));
@@ -43,4 +43,20 @@ result = 0 + addToNum(5) => 5
 14 + addToNum(1) => 15
 */
 
+
+// robin solution
+// let addToNum = (number) => {
+//     // number is negative
+//     if (number < 0) {
+//         throw "number must be greater than 1"
+//     // number is zero
+//     } else if (number == 0 ) {
+//         return number
+//     // number greater than 0
+//     } else {
+//         return (number + addToNum(number - 1))
+//     }
+// }
+
+// console.log(addToNum(5))
 module.exports = addToNum;
