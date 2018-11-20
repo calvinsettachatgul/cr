@@ -16,22 +16,22 @@
 // addToNum(2)
 // addToNum(1)
 
-let addToNum = (number) => {
-    if (number == 0){
-      return 0;
-    }
-    // base case
-    // number == 1
-    if(number == 1){
-        return 1;
-    }else{
-    // iterative case
-    // we know we want to call the function with number - 1
-        return number + addToNum(number-1)
-    }
+// let addToNum = (number) => {
+//     if (number == 0){
+//       return 0;
+//     }
+//     // base case
+//     // number == 1
+//     if(number == 1){
+//         return 1;
+//     }else{
+//     // iterative case
+//     // we know we want to call the function with number - 1
+//         return number + addToNum(number-1)
+//     }
 
-    return result;
-}
+//     return result;
+// }
 
 /*
 result = 0 + addToNum(5) => 5
@@ -42,18 +42,19 @@ result = 0 + addToNum(5) => 5
 */
 
 // robin solution
-// let addToNum = (number) => {
-//     // number is negative
-//     if (number < 0) {
-//         throw "number must be greater than 1"
-//     // number is zero
-//     } else if (number == 0 ) {
-//         return number
-//     // number greater than 0
-//     } else {
-//         return (number + addToNum(number - 1))
-//     }
-// }
+let addToNum = (number) => {
+    // number is negative
+    if (number < 0) {
+        // return 'not valid'
+        throw new Error("number must be greater than 1");
+    // number is zero
+    } else if (number == 0 ) {
+        return number
+    // number greater than 0
+    } else {
+        return (number + addToNum(number - 1))
+    }
+}
 
 // console.log(addToNum(5))
 module.exports = addToNum;

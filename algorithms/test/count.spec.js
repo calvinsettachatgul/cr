@@ -15,6 +15,12 @@ describe('#addToNum', function(){
         
     // })
     
+    context('an error occurred negative input', function(){
+        it('should throw an error', function(){
+             expect(() => addToNum(-2)).to.throw('number must be greater than 1'); // PASS
+        })
+    })
+    
     context('first argument is an Integer, second number is initial value', function(){
         it('should return the sum of the integers from 0 to first argument', function(){
            assert.equal(addToNum(5), 15) 
