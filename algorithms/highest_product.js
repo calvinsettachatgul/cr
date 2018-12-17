@@ -2,3 +2,12 @@
 //
 // // TODO: add test file
 //
+//
+
+const highestProduct = (arr) => {
+  let factors = {}
+  
+  return Math.max(...arr);
+};
+
+module.exports = highestProduct;
