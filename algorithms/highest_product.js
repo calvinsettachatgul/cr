@@ -80,7 +80,7 @@ const findMaxExcluding = (arr, indeces) => {
 //   2: {index:2, max 2},
 // }
 
-const highestProduct = (arr) => {
+const highestProduct_version2 = (arr) => {
   let indeces = {};
   for (let i = 0 ; i< 3; i++){
     let maxData = findMaxExcluding(arr, indeces); // find the maximum number excluding an index
@@ -90,6 +90,7 @@ const highestProduct = (arr) => {
   Object.keys(indeces).forEach((index) => {
     maxProduct *= indeces[index].max;
   });
+  k
   return maxProduct
 };
 
