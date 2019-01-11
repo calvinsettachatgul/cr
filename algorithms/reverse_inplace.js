@@ -9,6 +9,10 @@ const reverseInplace = (arr) => {
     let index = 0
     let length = arr.length-1
 
+    if(arr.length == 1) {
+        return arr
+    }
+
     while(index < length) {
         let temp = arr[index];
         arr[index] = arr[length]
@@ -19,4 +23,4 @@ const reverseInplace = (arr) => {
     return arr
 }
 
-export default reverseInplace;
+module.exports = reverseInplace;
