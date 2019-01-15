@@ -10,6 +10,6 @@ app.get('/test', (req, res) => {
     res.send('Hello World test')
 })
 
-app.listen(8000, () => {
-    console.log("Blog App listening on port 8000!")
+app.listen(8080, () => {
+    console.log("Blog App listening on port 8080!")
 })
