@@ -3,7 +3,7 @@ let assert = require('assert');
 let chai = require('chai');
 let expect = chai.expect;
 
-console.log(reverseInplace(['a','b','c','d']))
+// console.log(reverseInplace(['a','b','c','d']))
 
 describe.only('#reverseInplace', function () {
   it('should return reversed order of characters in an array', function () {
