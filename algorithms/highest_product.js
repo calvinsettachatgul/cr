@@ -37,8 +37,8 @@ function highestProduct(arr) {
     return max;
 };
 
-console.log(highestProduct([1,2,3,4,5]) == 60); //true
-console.log(highestProduct([-6,-7,3,4,5]) == 210); //true
+// console.log(highestProduct([1,2,3,4,5]) == 60); //true
+// console.log(highestProduct([-6,-7,3,4,5]) == 210); //true
 
 module.exports = highestProduct;
 // how can we make this better?
