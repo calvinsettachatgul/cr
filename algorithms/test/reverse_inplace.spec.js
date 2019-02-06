@@ -5,7 +5,7 @@ let expect = chai.expect;
 
 // console.log(reverseInplace(['a','b','c','d']))
 
-describe.only('#reverseInplace', function () {
+describe('#reverseInplace', function () {
   it('should return reversed order of characters in an array', function () {
     let arr = ['a','b','c','d']
     let reversed_arr = ['d','c','b','a']
